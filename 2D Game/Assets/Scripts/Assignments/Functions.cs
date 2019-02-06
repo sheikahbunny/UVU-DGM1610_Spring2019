@@ -5,37 +5,37 @@ using UnityEngine;
 public class Functions : MonoBehaviour
 {
 
-    public string weather;
+    public string emotion;
 
     void Start()
     {
 
-        Weather(weather);
+       mood(emotion);
 
     }
-    void Weather(string weatherState)
+    void mood(string emotionState)
     {
-        if (weatherState == "Sunny")
+        if (emotionState == "Happy")
         {
-            print("Eew, the suns gross!");
+            print("What a good and exciting day today!");
         }
-        else if (weatherState == "Raining")
+        else if (emotionState == "Sad")
         {
-            print("YES, its FINALLY raining! Where's my umbrella");
+            print("If only things were going right today.");
         }
-        else if (weatherState == "Windy")
+        else if (emotionState == "Mad")
         {
-            print("gotta grab my jacket, it's cold.");
+            print("Why did today have to be the way it is.");
 
         }
-        else if (weatherState == "Snowing")
+        else if (emotionState == "Scared")
         {
-            print("brrr... it's time to grab my snowboard!");
+            print("I wish there was someone here with me right now.");
 
         }
         else
         {
-            print("Looks like theres nothing here " + weatherState);
+            print("I don't know what you're trying to feel." + emotionState);
 
 
         }

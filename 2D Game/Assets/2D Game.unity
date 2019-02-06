@@ -123,6 +123,7 @@ GameObject:
   - component: {fileID: 1539882733}
   - component: {fileID: 1539882732}
   - component: {fileID: 1539882734}
+  - component: {fileID: 1539882735}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -136,7 +137,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1539882731}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 29b622537397a6c41b72ea91f0c24408, type: 3}
   m_Name: 
@@ -203,6 +204,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1539882735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1539882731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db9b1333c99411949870b5931c094c4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weather: Raining
 --- !u!1 &1956683726
 GameObject:
   m_ObjectHideFlags: 0
