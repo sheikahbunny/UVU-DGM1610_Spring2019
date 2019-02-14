@@ -8,6 +8,7 @@ public class TestJump : MonoBehaviour
     public bool onGround;
     private Rigidbody2D rb;
     public float jumpSpeed;
+    
 
     void Start()
     {
