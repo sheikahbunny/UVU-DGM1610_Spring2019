@@ -7,7 +7,7 @@ public class Weapon : MonoBehaviour {
     public bool tradeable;
     public bool sellable;
     public float durability;
+    public float criticalDamageBonus;
 
-       
-	
+
 }
