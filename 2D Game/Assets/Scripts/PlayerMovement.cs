@@ -4,13 +4,22 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour {
 
-    public float moveSpeed; 
+    public float moveSpeed;
+    public float jumpHeight;
 
-	// Use this for initialization
+
+    private bool grounded;
+    public Transform groundCheck;
+    public float groundCheckRadius;
+    public LayerMask whatIsGround;
+
 	void Start () {
 		
 	}
-
+    private void FixedUpdate()
+    {
+        grounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, whatIsGround);
+    }
     // Update is called once per frame
     void Update() {
 
@@ -24,7 +33,10 @@ public class PlayerMovement : MonoBehaviour {
             GetComponent<Rigidbody2D>().velocity = new Vector2(-moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
         }
 
-
+        if (Input.GetKeyDown(KeyCode.Space) && grounded)
+        {
+            Jump();
+        }
 
 
 
@@ -33,4 +45,8 @@ public class PlayerMovement : MonoBehaviour {
          
         
 	}
+    void Jump()
+    {
+        GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, jumpHeight);
+    }
 }
