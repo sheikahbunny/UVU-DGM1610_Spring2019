@@ -455,7 +455,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.2, y: 0.2}
+    oldSize: {x: 30.62, y: 31.730001}
     newSize: {x: 0.16, y: 0.16}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -499,8 +499,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: 21300000, guid: c8988f925f1a33a4fa4ff6a5e5093eb4, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -517,8 +517,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1067258705}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.38, y: -3.97, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 1}
+  m_LocalPosition: {x: -11.96, y: 0.01, z: 0}
+  m_LocalScale: {x: 0.17112, y: 0.13518, z: 1}
   m_Children:
   - {fileID: 1026609476}
   m_Father: {fileID: 0}
@@ -651,11 +651,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4516489424855722, guid: 848732c381fe1f1499261d1976f3306a, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 4.5
+      value: -12.03
       objectReference: {fileID: 0}
     - target: {fileID: 4516489424855722, guid: 848732c381fe1f1499261d1976f3306a, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -4.14
+      value: -4.73
       objectReference: {fileID: 0}
     - target: {fileID: 4516489424855722, guid: 848732c381fe1f1499261d1976f3306a, type: 2}
       propertyPath: m_LocalPosition.z
@@ -687,15 +687,40 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4516489424855722, guid: 848732c381fe1f1499261d1976f3306a, type: 2}
       propertyPath: m_LocalScale.x
-      value: 4.756406
+      value: 0.05109293
       objectReference: {fileID: 0}
     - target: {fileID: 4516489424855722, guid: 848732c381fe1f1499261d1976f3306a, type: 2}
       propertyPath: m_LocalScale.y
-      value: 4.5928125
+      value: 0.051926635
       objectReference: {fileID: 0}
     - target: {fileID: 4516489424855722, guid: 848732c381fe1f1499261d1976f3306a, type: 2}
       propertyPath: m_LocalScale.z
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 212428864309003082, guid: 848732c381fe1f1499261d1976f3306a,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 5f724b81e9140254b894ab806af405c7,
+        type: 3}
+    - target: {fileID: 212428864309003082, guid: 848732c381fe1f1499261d1976f3306a,
+        type: 2}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 212428864309003082, guid: 848732c381fe1f1499261d1976f3306a,
+        type: 2}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 212428864309003082, guid: 848732c381fe1f1499261d1976f3306a,
+        type: 2}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1759195115379340, guid: 848732c381fe1f1499261d1976f3306a, type: 2}
+      propertyPath: m_Name
+      value: Bone
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 848732c381fe1f1499261d1976f3306a, type: 2}
@@ -731,9 +756,9 @@ BoxCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.049999997, y: 0.049999997, z: 0.049999997, w: 0.049999997}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.16, y: 0.16}
+    oldSize: {x: 56.92, y: 26.51}
     newSize: {x: 0.16, y: 0.16}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -777,8 +802,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Color: {r: 0.6886792, g: 0.105882354, b: 0.26312745, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 7530392d92d156a4382dcf3d9532202a, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -795,8 +820,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1864223442}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.1, y: -4.792, z: 0}
-  m_LocalScale: {x: 77.844406, y: 2.8117607, z: 1}
+  m_LocalPosition: {x: 0.008, y: -0.089, z: 0}
+  m_LocalScale: {x: 0.32670707, y: 0.37808064, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
