@@ -121,10 +121,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 420541260}
+  - component: {fileID: 420541261}
   m_Layer: 0
   m_Name: LevelManager
   m_TagString: Untagged
-  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -141,6 +142,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &420541261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 420541259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 588d2642c171c8744abb16f057fedca9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentCheckPoint: {fileID: 1215383406}
+  deathParticle: {fileID: 1365472727124560, guid: ca7f07c56ee5b154bba25400e189fa93,
+    type: 2}
+  respawnParticle: {fileID: 0}
+  respawnDelay: 1
+  pointPenaltyOnDeath: 10
 --- !u!1 &576016928
 GameObject:
   m_ObjectHideFlags: 0
@@ -545,7 +563,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1067258705}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.15, y: -1.76, z: 0}
+  m_LocalPosition: {x: -5.99, y: -1.21, z: 0}
   m_LocalScale: {x: 0.17112, y: 0.13518, z: 1}
   m_Children:
   - {fileID: 1026609476}
@@ -671,6 +689,34 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1215383406
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1215383407}
+  m_Layer: 0
+  m_Name: StartCheckPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1215383407
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1215383406}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.89, y: 1.51, z: 0}
+  m_LocalScale: {x: 4.377528, y: 4.22553, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1412536654
 Prefab:
   m_ObjectHideFlags: 0
@@ -782,6 +828,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2b63e54904be4c418541bfc78ad7b5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelManager: {fileID: 0}
 --- !u!61 &1813562759
 BoxCollider2D:
   m_ObjectHideFlags: 0
