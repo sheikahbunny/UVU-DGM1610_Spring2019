@@ -35,7 +35,7 @@ public class LevelManager : MonoBehaviour {
     {
         StartCoroutine("RespawnPlayerCo");
     }
-    public IEnumerator RespawnPlayerco()
+    public IEnumerator RespawnPlayerCo()
     {
         //Generate Death Particle
         Instantiate (deathParticle, pcRigid.transform.position, pcRigid.transform.rotation);
@@ -63,6 +63,10 @@ public class LevelManager : MonoBehaviour {
         Instantiate (respawnParticle, currentCheckPoint.transform.position, currentCheckPoint.transform.rotation);
 
 
+    }
+    void Update()
+    {
+        
     }
 
 }

@@ -7,7 +7,7 @@ public class Projectile : MonoBehaviour {
 
     public float speed;
 
-    public float timeout;
+    public float timeOut;
     public GameObject player;
 
     public GameObject enemyDeath;

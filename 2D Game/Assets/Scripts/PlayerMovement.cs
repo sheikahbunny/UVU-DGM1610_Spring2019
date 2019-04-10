@@ -38,7 +38,10 @@ public class PlayerMovement : MonoBehaviour {
             Jump();
         }
 
-
+        if (GetComponent<Rigidbody2D>().velocity.x > 0)
+            transform.localScale = new Vector3(26.5877f, 24.5118f, 1f);
+        else if (GetComponent<Rigidbody2D>().velocity.x < 0)
+            transform.localScale = new Vector3(-26.5877f, 24.5118f, 1f);
 
         
 
