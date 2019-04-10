@@ -195,6 +195,7 @@ GameObject:
   - component: {fileID: 104736612}
   - component: {fileID: 104736611}
   - component: {fileID: 104736616}
+  - component: {fileID: 104736617}
   m_Layer: 0
   m_Name: Baddy
   m_TagString: Enemy
@@ -219,7 +220,7 @@ MonoBehaviour:
   wallCheckRadius: 1
   whatIsWall:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 768
   edgeCheck: {fileID: 1965251864}
 --- !u!61 &104736612
 BoxCollider2D:
@@ -244,7 +245,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.0001, y: 0.0001}
+  m_Size: {x: 0.18, y: 0.18}
   m_EdgeRadius: 0
 --- !u!50 &104736613
 Rigidbody2D:
@@ -325,7 +326,7 @@ Transform:
   - {fileID: 738068918}
   - {fileID: 1965251864}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &104736616
 BoxCollider2D:
@@ -352,6 +353,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.2, y: 0.2}
   m_EdgeRadius: 0
+--- !u!114 &104736617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 104736610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2b63e54904be4c418541bfc78ad7b5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelManager: {fileID: 0}
 --- !u!1 &420541259
 GameObject:
   m_ObjectHideFlags: 0
@@ -395,7 +408,8 @@ MonoBehaviour:
   currentCheckPoint: {fileID: 1215383406}
   deathParticle: {fileID: 1365472727124560, guid: ca7f07c56ee5b154bba25400e189fa93,
     type: 2}
-  respawnParticle: {fileID: 0}
+  respawnParticle: {fileID: 1365472727124560, guid: ca7f07c56ee5b154bba25400e189fa93,
+    type: 2}
   respawnDelay: 1
   pointPenaltyOnDeath: 10
 --- !u!1 &576016928
@@ -692,6 +706,7 @@ GameObject:
   - component: {fileID: 1067258707}
   - component: {fileID: 1067258706}
   - component: {fileID: 1067258712}
+  - component: {fileID: 1067258713}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -861,6 +876,19 @@ MonoBehaviour:
   - Mia
   - Fred
   santasList: []
+--- !u!114 &1067258713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1067258705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7418d045fa1c3a4088323f9101712fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firePoint: {fileID: 1801510904}
+  projectile: {fileID: 0}
 --- !u!1 &1098934177
 GameObject:
   m_ObjectHideFlags: 0
@@ -957,48 +985,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1001 &1165553576
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4176428873867566, guid: 0ce46635e38f32e40bee7610ce630b89, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -7.55
-      objectReference: {fileID: 0}
-    - target: {fileID: 4176428873867566, guid: 0ce46635e38f32e40bee7610ce630b89, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -0.27
-      objectReference: {fileID: 0}
-    - target: {fileID: 4176428873867566, guid: 0ce46635e38f32e40bee7610ce630b89, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0.31563246
-      objectReference: {fileID: 0}
-    - target: {fileID: 4176428873867566, guid: 0ce46635e38f32e40bee7610ce630b89, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4176428873867566, guid: 0ce46635e38f32e40bee7610ce630b89, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4176428873867566, guid: 0ce46635e38f32e40bee7610ce630b89, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4176428873867566, guid: 0ce46635e38f32e40bee7610ce630b89, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4176428873867566, guid: 0ce46635e38f32e40bee7610ce630b89, type: 2}
-      propertyPath: m_RootOrder
-      value: 9
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 0ce46635e38f32e40bee7610ce630b89, type: 2}
-  m_IsPrefabAsset: 0
 --- !u!1 &1215383406
 GameObject:
   m_ObjectHideFlags: 0
@@ -1119,9 +1105,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1801510904}
   m_Layer: 0
-  m_Name: FirePoint
+  m_Name: firePoint
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1132,7 +1118,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1801510903}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.4, y: -1.4, z: 0}
+  m_LocalPosition: {x: 0.103, y: -0.022, z: 0}
   m_LocalScale: {x: 6.83, y: 15.67, z: 1}
   m_Children: []
   m_Father: {fileID: 1067258711}
