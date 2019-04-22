@@ -445,7 +445,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -263, y: 217}
+  m_AnchoredPosition: {x: -557, y: 353}
   m_SizeDelta: {x: 160, y: 38.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &576016930
@@ -510,7 +510,7 @@ GameObject:
   m_Layer: 0
   m_Name: wallCheck
   m_TagString: Untagged
-  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -621,7 +621,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -342, y: 217}
+  m_AnchoredPosition: {x: -645, y: 353}
   m_SizeDelta: {x: 199.6, y: 38.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &941081143
@@ -747,6 +747,7 @@ MonoBehaviour:
   whatIsGround:
     serializedVersion: 2
     m_Bits: 256
+  animator: {fileID: 0}
 --- !u!50 &1067258708
 Rigidbody2D:
   serializedVersion: 4
@@ -1107,7 +1108,7 @@ GameObject:
   m_Layer: 0
   m_Name: firePoint
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1412,7 +1413,7 @@ GameObject:
   m_Layer: 0
   m_Name: edgeCheck
   m_TagString: Untagged
-  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
