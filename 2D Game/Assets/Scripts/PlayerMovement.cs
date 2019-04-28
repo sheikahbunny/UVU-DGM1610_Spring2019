@@ -14,6 +14,7 @@ public class PlayerMovement : MonoBehaviour {
     public LayerMask whatIsGround;
     public int curHealth;
     public int userHealth = 3;
+    public bool faceRight = true;
 
 
     private float moveVelocity;
@@ -62,16 +63,26 @@ public class PlayerMovement : MonoBehaviour {
            animator.SetBool("isJumping", false);
         }
         //Player Flip
-        if (GetComponent<Rigidbody2D>().velocity.x > 0)
-            transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
-        else if (GetComponent<Rigidbody2D>().velocity.x < 0)
-            transform.localScale = new Vector3(-1.5f, 1.5f, 1.5f);
+        if (GetComponent<Rigidbody2D>().velocity.x > 0 && !faceRight)
+        {
+            Flip();
+        }    
+        else if (GetComponent<Rigidbody2D>().velocity.x < 0 && faceRight)
+        {
+            Flip();
+        }
+            
 
         
 
          
         
 	}
+    void Flip()
+    {
+        faceRight = !faceRight;
+        transform.Rotate(0f, 180f, 0f);
+    }
     void Jump()
     {
         GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, jumpHeight);

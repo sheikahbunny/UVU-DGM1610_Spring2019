@@ -362,8 +362,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2203b2824151ac46bde442a556bf7b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 16.18
-  timeOut: 0.23
+  speed: 23
+  timeOut: 0.9
   player: {fileID: 0}
   enemyDeath: {fileID: 1611261042762846, guid: 4f38cc9cba12cc5468fdef9c2f597f27, type: 2}
   projectileParticle: {fileID: 1802914640448990}

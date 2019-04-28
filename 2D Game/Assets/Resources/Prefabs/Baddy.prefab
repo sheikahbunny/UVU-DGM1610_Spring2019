@@ -22,7 +22,7 @@ GameObject:
   m_Layer: 0
   m_Name: edgeCheck
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -40,7 +40,6 @@ GameObject:
   - component: {fileID: 114650045974785542}
   - component: {fileID: 114821529257520614}
   - component: {fileID: 60625286204752084}
-  - component: {fileID: 95156614025217670}
   m_Layer: 0
   m_Name: Baddy
   m_TagString: Enemy
@@ -59,7 +58,7 @@ GameObject:
   m_Layer: 0
   m_Name: wallCheck
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 7148428337604731935, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -70,8 +69,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1928608200738806}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.3, y: -10.2, z: 11.840885}
-  m_LocalScale: {x: 1.5152429, y: 1.5804787, z: 2.8909}
+  m_LocalPosition: {x: 7.62, y: -7.77, z: 0}
+  m_LocalScale: {x: 1.515243, y: 1.580479, z: 2.8909}
   m_Children:
   - {fileID: 4185392598416204}
   - {fileID: 4417281130770620}
@@ -85,8 +84,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1986762064503956}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.097, y: 0.018, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -3.57, y: -0.77, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 4154183486945554}
   m_RootOrder: 0
@@ -98,7 +97,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1323375644417442}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.098, y: -0.035, z: 0}
+  m_LocalPosition: {x: -3.59, y: -1.27, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4154183486945554}
@@ -371,7 +370,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.42, y: 0}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -382,26 +381,8 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 8.43, y: 5.72}
+  m_Size: {x: 9.82, y: 6.59}
   m_EdgeRadius: 0
---- !u!95 &95156614025217670
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1928608200738806}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 3475728967a8ddc4e941b79b1fe83eba, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &114650045974785542
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -413,10 +394,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4a1453fc0b0d1e4d93296ea420299e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 2
+  moveSpeed: 4
   moveRight: 0
   wallCheck: {fileID: 4185392598416204}
-  wallCheckRadius: 1
+  wallCheckRadius: 0
   whatIsWall:
     serializedVersion: 2
     m_Bits: 768
@@ -468,7 +449,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: a2a83b5a783df9340b0e77e60fb6e0c1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

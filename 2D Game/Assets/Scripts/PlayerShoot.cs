@@ -11,11 +11,14 @@ public class PlayerShoot : MonoBehaviour {
 	void Start () {
         //projectile needs to be added to prefabs
         projectile = Resources.Load("Prefabs/Ammo") as GameObject;
+
 	}
 	
 	// Update is called once per frame
 	void Update () {
         if (Input.GetKeyDown(KeyCode.F))
             Instantiate(projectile, firePoint.position, firePoint.rotation);
+
+
 	}
 }
