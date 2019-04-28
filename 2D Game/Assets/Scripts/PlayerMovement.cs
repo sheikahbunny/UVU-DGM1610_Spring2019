@@ -12,8 +12,8 @@ public class PlayerMovement : MonoBehaviour {
     public Transform groundCheck;
     public float groundCheckRadius;
     public LayerMask whatIsGround;
-
-
+    public int curHealth;
+    public int userHealth = 3;
 
 
     private float moveVelocity;
