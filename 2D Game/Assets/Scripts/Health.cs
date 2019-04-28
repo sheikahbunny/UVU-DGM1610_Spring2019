@@ -10,13 +10,15 @@ public class Health : MonoBehaviour {
     public Image HeartUI;
 
     private PlayerMovement player;
+    public PlayerMovement currHealth;
 
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
+        currHealth = GameObject.Find("Player").GetComponent<PlayerMovement>();
     }
      void Update()
     {
-        HeartUI.sprite = HeartSprites[player.curHealth];
+        HeartUI.sprite = HeartSprites[currHealth.userHealth];
     }
 }

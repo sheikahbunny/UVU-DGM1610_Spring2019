@@ -21,8 +21,8 @@ public class PlayerMovement : MonoBehaviour {
     public Animator animator;
 
 	void Start () {
-        animator.SetBool("isWalking", false);
-        animator.SetBool("isJumping", false);
+       animator.SetBool("isWalking", false);
+       animator.SetBool("isJumping", false);
 	}
     private void FixedUpdate()
     {
@@ -39,7 +39,7 @@ public class PlayerMovement : MonoBehaviour {
         }
         else if(Input.GetKeyUp(KeyCode.D))
         {
-            animator.SetBool("isWalking", false);
+           animator.SetBool("isWalking", false);
         }
         if(Input.GetKey(KeyCode.A))
         {
@@ -49,7 +49,7 @@ public class PlayerMovement : MonoBehaviour {
         else if (Input.GetKeyUp(KeyCode.A))
         {
             
-            animator.SetBool("isWalking", false);
+           animator.SetBool("isWalking", false);
         }
          
         
@@ -59,7 +59,7 @@ public class PlayerMovement : MonoBehaviour {
         }
         if (grounded)
         {
-            animator.SetBool("isJumping", false);
+           animator.SetBool("isJumping", false);
         }
         //Player Flip
         if (GetComponent<Rigidbody2D>().velocity.x > 0)

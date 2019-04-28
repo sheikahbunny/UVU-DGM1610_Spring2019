@@ -5,7 +5,7 @@ using UnityEngine;
 public class Kill : MonoBehaviour {
 
     public LevelManager levelManager;
-
+    public bool deathBox;
 
     void Start ()
     {
@@ -21,6 +21,10 @@ public class Kill : MonoBehaviour {
         if (other.CompareTag("Player"))
         {
             PlayerMovement HP = other.GetComponent<PlayerMovement>();
+            if (deathBox)
+            {
+                levelManager.Respawnplayer();
+            }
             if (HP.userHealth == 1)
             {
                 levelManager.Respawnplayer();
@@ -30,6 +34,12 @@ public class Kill : MonoBehaviour {
             {
                 HP.userHealth -= 1;
                 other.GetComponent<Rigidbody2D>().velocity *= -2;
+            }
+
+            
+            if(HP.userHealth > 3)
+            {
+                HP.userHealth = 3;
             }
         }
             

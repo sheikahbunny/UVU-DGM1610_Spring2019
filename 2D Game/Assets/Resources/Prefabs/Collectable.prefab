@@ -9,90 +9,74 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1410114610703458}
+  m_RootGameObject: {fileID: 1193787192885564}
   m_IsPrefabAsset: 1
---- !u!1 &1410114610703458
+--- !u!1 &1193787192885564
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4916475083859004}
-  - component: {fileID: 212052529614773792}
-  - component: {fileID: 114452142873262478}
-  - component: {fileID: 58492996014320196}
-  - component: {fileID: 58115276651247402}
+  - component: {fileID: 4676816007793322}
+  - component: {fileID: 212649944180965518}
+  - component: {fileID: 114994109847308302}
+  - component: {fileID: 58714120597021982}
   m_Layer: 0
-  m_Name: Bone
+  m_Name: Collectable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4916475083859004
+--- !u!4 &4676816007793322
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1410114610703458}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.8100004, y: -3.41, z: 0}
-  m_LocalScale: {x: 0.10643297, y: 0.075212486, z: 1}
+  m_GameObject: {fileID: 1193787192885564}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -17, y: -12, z: 108.0823}
+  m_LocalScale: {x: 0.6, y: 0.6, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!58 &58115276651247402
+--- !u!58 &58714120597021982
 CircleCollider2D:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1410114610703458}
+  m_GameObject: {fileID: 1193787192885564}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -2.52, y: 1.68}
   serializedVersion: 2
-  m_Radius: 0.1
---- !u!58 &58492996014320196
-CircleCollider2D:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1410114610703458}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.1
---- !u!114 &114452142873262478
+  m_Radius: 3.39
+--- !u!114 &114994109847308302
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1410114610703458}
+  m_GameObject: {fileID: 1193787192885564}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f1b27c117bf99fc48a31034774944373, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinValue: 0
-  isHealth: 1
-  healUp: 1
---- !u!212 &212052529614773792
+  coinValue: 1
+  isHealth: 0
+  healUp: 0
+--- !u!212 &212649944180965518
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1410114610703458}
+  m_GameObject: {fileID: 1193787192885564}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -121,13 +105,13 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 5f724b81e9140254b894ab806af405c7, type: 3}
+  m_SortingOrder: 5
+  m_Sprite: {fileID: 21300000, guid: 71c4b800e61659f4da259447eab88abc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.2, y: 0.2}
+  m_Size: {x: 40.319996, y: 30.24}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

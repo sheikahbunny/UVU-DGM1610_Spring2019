@@ -14,6 +14,8 @@ public class Projectile : MonoBehaviour {
 
     public GameObject projectileParticle;
 
+    public GameObject breakObj;
+
     public int pointsForKill;
 
     // Use this for initialization
@@ -23,6 +25,8 @@ public class Projectile : MonoBehaviour {
         enemyDeath = Resources.Load("Prefabs/PS") as GameObject;
 
         projectileParticle = Resources.Load("Prefabs/PS") as GameObject;
+
+        breakObj = Resources.Load("Prefabs/PS") as GameObject;
 
         if (player.transform.localScale.x < 0)
             speed = -speed;
@@ -45,6 +49,12 @@ public class Projectile : MonoBehaviour {
             Instantiate(enemyDeath, other.transform.position, other.transform.rotation);
             Destroy(other.gameObject);
             ScoreManager.AddPoints(pointsForKill);
+
+        }
+        else if (other.tag == "Breakable")
+        {
+            Instantiate(breakObj, other.transform.position, other.transform.rotation);
+            Destroy(other.gameObject);
         }
         //Destroy projectile after hitting the enemy.
         Destroy(gameObject);
